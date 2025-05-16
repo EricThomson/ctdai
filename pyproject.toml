@@ -1,0 +1,33 @@
+[project]
+name = "ctdai"
+version = "0.1.0"
+description = "Code the Dream AI Basis Set"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Core AI and LLM packages
+    "langchain",
+    "langchain-openai",
+    "langchain-community",
+    "langchain-text-splitters",
+    "openai",
+    "transformers",
+    "sentence-transformers",
+    "huggingface-hub",
+    "redlines",
+
+    # Data science and visualization
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+
+    # Jupyter and interactive widgets
+    "jupyterlab",
+    "ipywidgets",
+    "tqdm",
+
+    # Utilities for RAG
+    "pymilvus",
+    "pypdf"
+]
