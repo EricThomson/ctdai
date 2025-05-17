@@ -1,5 +1,5 @@
 # Code the Dream AI Workspace
-A workspace to brainstorm and build out AI teaching materials for Code the Dream -- experiment with lesson plans, identify core skills, and explore ways to teach AI in a way that’s hands-on and accessible.
+A workspace to brainstorm and build out AI teaching materials for Code the Dream. A place to experiment with lesson plans, identify core skills, and explore ways to teach AI in a way that’s hands-on and accessible.
 
 One goal is to create a “basis set” of AI tools and concepts — not to cover everything, but to give students enough foundational knowledge and confidence to pick up new tools on their own.
 
