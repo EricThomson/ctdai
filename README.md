@@ -1,5 +1,5 @@
 # Code the Dream AI Workspace
-A workspace for to brainstorm and develop hands-on, accessible AI teaching materials for [Code the Dream](https://codethedream.org/). This informal space is for experimenting with lesson plans, identifying core skills, and creating learning paths for Python 200 and AI modules. Student facing-material will be hosted at Code the Dream. 
+A workspace to develop hands-on, accessible AI teaching materials for [Code the Dream](https://codethedream.org/). This informal space is for experimenting with lesson plans, identifying core skills, and creating learning paths for Python 200 and AI modules. Student facing-material will be hosted at Code the Dream. 
 
 One goal is to create a modular “basis set” of AI tools and concepts — not to cover everything -- but to give students enough foundational knowledge and confidence to pick up new tools on their own.
 
