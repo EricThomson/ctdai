@@ -1,11 +1,11 @@
 # Code the Dream AI Workspace
-A workspace for to brainstorm and build out AI teaching materials for Code the Dream. A place to experiment with lesson plans, identify core skills, and explore ways to teach AI in a way that’s hands-on and accessible. This is an *informal* space to brainstorm and build out more specific learning paths for Python 200, AI modules, etc. The student facing-material will be hosted at Code the Dream. 
+A workspace for to brainstorm and develop hands-on, accessible AI teaching materials for [Code the Dream](https://codethedream.org/). This informal space is for experimenting with lesson plans, identifying core skills, and creating learning paths for Python 200 and AI modules. Student facing-material will be hosted at Code the Dream. 
 
-One goal is to create a “basis set” of AI tools and concepts — not to cover everything, but to give students enough foundational knowledge and confidence to pick up new tools on their own.
+One goal is to create a modular “basis set” of AI tools and concepts — not to cover everything -- but to give students enough foundational knowledge and confidence to pick up new tools on their own.
 
-This repo contains multiple notebooks to introduce core skills in a modular way. Early lessons focus on one core idea or tool at a time (the “toolkit”). The goal is to pull these pieces together into more complex, project-driven workflows — such as RAG pipelines and AI agents.
+This repo contains multiple notebooks to introduce core skills in a modular way. Early lessons focus on one core idea or tool at a time (the “toolkit”). We then pull these pieces together into more complex, project-driven workflows — such as RAG pipelines and AI agents.
 
-We're designing for flexibility: things are moving fast, tools will come and go. By keeping the design modular, we can drop, add, or remix notebooks as needed — and adapt projects to use new tools as they emerge.
+The modular design ensures flexibility, allowing us to adapt, add, or remix content as tools evolve.
 
 # Modular toolkit
 These are the draft notebooks that introduce key tools, ideas, and mental models. The first few are intended to be taught in order. Others can be slotted in as needed. 
