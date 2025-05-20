@@ -22,7 +22,7 @@ These are the draft notebooks that introduce key tools, ideas, and mental models
 | `langchain_intro`     | Learn the basics of LangChain and how to use it to build more complex, modular LLM-powered applications. |
 
 # Projects
-These are more than just modular intros — they start to combine tools and ideas, giving students a taste of how real-world LLM applications work. 
+These are more than just modular intros — they start to combine tools and ideas. These will ideally give students a taste of how real-world LLM applications work, and provide the basis for more practical applications.
 
 > The following are just stubs with no content
 
