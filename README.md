@@ -6,7 +6,7 @@ Our rough plan for the three weeks is as follows:
 
 - **Week 1: Hello, AI**: From large-language-models to chatbots.
 - **Week 2: Retrieval-augmented generation (RAG)**: Building external knowledge-sources into LLM applications. 
-- **Week 3: Agents**: Giving AI systems more automomy.
+- **Week 3: Agents**: Giving AI systems automomy to plan and use external tools.
 
 For a more detailed discussion of the course plan, please [see the docs](https://ctdai.readthedocs.io/en/latest/). 
 
