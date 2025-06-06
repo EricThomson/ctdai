@@ -40,7 +40,7 @@ By the end of this week, students will be able to:
 - OpenAI API documentation: https://platform.openai.com/docs/
 - LangChain quickstart: https://docs.langchain.com/docs/get-started/
 - Ollama setup guide: https://ollama.com/
-- Prompt Engineering Guide ai site.
+- DeepLearning.ai site.
 
 ## Instructor Notes
 
