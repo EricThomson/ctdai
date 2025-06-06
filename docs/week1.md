@@ -3,23 +3,23 @@ Week 1 introduces students to generative AI, with a focus on large language mode
 
 ## Focus
 - General background
-  - How do LLMs fit into the wider ML/AI landscape.
-  - What happened? Why was there an LLM explosion (attention/transormer architecture etc).
-  - Pretraining vs fine-tuning
+    - How do LLMs fit into the wider ML/AI landscape.
+    - What happened? Why was there an LLM explosion (attention/transormer architecture etc).
+    - Pretraining vs fine-tuning
 - Working with APIs 
-  - Working with OpenAI api (chat models vs completion models)
-  - Understanding input/output formats (system/user/assistant roles)
-  - Parameters (temperature, max tokens, etc) 
+    - Working with OpenAI api (chat models vs completion models)
+    - Understanding input/output formats (system/user/assistant roles)
+    - Parameters (temperature, max tokens, etc) 
 - Prompt engineering
-  - Zero-shot, few-shot, chain-of-thought prompting.
-  - Prompt templates  
+    - Zero-shot, few-shot, chain-of-thought prompting.
+    - Prompt templates  
 - Build a basic chatbot interface
 - Ollama: running models locally
 - Langchain intro
-  - What it does, when to use it
-  - Running different models
-  - LCEL (langchain expression language)
-  - Interfacing Ollama with langchain
+    - What it does, when to use it
+    - Running different models
+    - LCEL (langchain expression language)
+    - Interfacing Ollama with langchain
   
 ## Hands-On Activities
 - Learn the basics of the OpenAI API:
@@ -29,6 +29,7 @@ Week 1 introduces students to generative AI, with a focus on large language mode
 
 ## Learning Outcomes
 By the end of this week, students will be able to:
+
 - Explain what LLMs are and how they differ from earlier NLP models, and why they have become so much more powerful recently. 
 - Use OpenAI’s API to send prompts and interpret responses
 - Apply basic prompt engineering principles to improve model output
@@ -40,7 +41,7 @@ By the end of this week, students will be able to:
 - OpenAI API documentation: https://platform.openai.com/docs/
 - LangChain quickstart: https://docs.langchain.com/docs/get-started/
 - Ollama setup guide: https://ollama.com/
-- DeepLearning.ai site.
+- DeepLearning.ai prompt engineering class
 
 ## Instructor Notes
-
+-- add notes here -- 
