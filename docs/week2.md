@@ -9,17 +9,20 @@ This week, we will focus on building a minimal working RAG pipeline that connect
 ### Step 1: Minimal Naive RAG Implementation 
 
 Start with the absolute basics, implementing RAG from scratch:
+
 - Load 1–2 PDFs using `pypdf`
 - Extract full text
 - Perform basic keyword matching (e.g., `if query in doc`)
 - Pass matched content into the LLM via a simple prompt
 
 Here we will emphasize:
+
 - The core concept of RAG: retrieving information from an external data store and injecting it into the model’s prompt to generate better answers. This works, but has limitations.
 - The limitations of naïve RAG include the retrieval step’s inability to handle synonyms, lack of scalability with larger datasets, and absence of filtering or ranking by relevance.
 
 ### Step 2: Basic Semantic RAG
 Address the limitations of the minimal RAG implementation by introducing:
+
 - Document chunking (e.g., with `RecursiveCharacterTextSplitter`)
 - Embedding chunks using OpenAI or Hugging Face models
 - Storing and querying chunks in a vector store (e.g., FAISS)
@@ -28,7 +31,8 @@ Address the limitations of the minimal RAG implementation by introducing:
 We’ll use resources such as [Nir Diamant’s minimal RAG example](https://github.com/NirDiamant/RAG_Techniques) to demonstrate this workflow.
 
 ### Step 3: Scalable RAG with pgvector
-Build a full pipeline using Langchain that includes:
+Build a full pipeline using Langchain that includes:  
+
 - Postgres vector storage (either local Postgres or Supabase)
 - Metadata storage and retrieval
 - Multi-document libraries
@@ -48,6 +52,7 @@ We will adapt and tweak the [excellent tutorial from Timescale](https://www.time
 
 ## Learning Outcomes
 By the end of this week, students will be able to:
+
 - Explain what retrieval-augmented generation is and why it's useful (cost savings comopared to increasing context window).
 - Build a basic document ingestion and chunking pipeline
 - Compute vector embeddings of text using a transformer-based model
@@ -69,12 +74,14 @@ Note: the distinction between *retrieval* and *generation* is foundational. Retr
 
 ## Instructor Notes
 Provide a small, curated library of documents for demos and assignments. Consider:
+
 - Public scientific papers or abstracts (e.g., arXiv)
 - Policy documents or public tutorials (e.g., bias in AI or ML, how to learn to code, best way to learn a new skill, tbd). 
 - Code the Dream curriculum materials (e.g., course descriptions or content) — this allows students to build domain-specific assistants that can answer questions about CTD itself.
 - tbd
 
 Regarding the vector store setup:
+
 - Supabase is a friendly on-ramp.
 - Alternatively, setting up a local Postgres server would reinforce DB knowledge from Python 100 and provide useful struggles and hands-on practice. Students used SQLite in P100 and could use some practice with db servers.
 
