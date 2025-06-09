@@ -4,9 +4,9 @@ Retrieval-Augmented Generation (RAG) systems are large language models (LLMs) th
 For example, if you ask a standard LLM, “Who won the World Cup?” it might reply based on 2021 or earlier knowledge. A RAG system, by contrast, can search a structured data source and provide current information. This makes RAG useful for question-answering systems, technical assistants, customer support tools, and more.
 
 ## Focus
-This week, we will focus on building a minimal working RAG pipeline that connects an LLM with a document-based knowledge store. While RAG systems can get very complex, we’ll focus on starting simple and understanding and implementing the core components of such pipelines. Our plan is to build things up in *three tiers*:
+This week, we will focus on building a minimal working RAG pipeline that connects an LLM with a document-based knowledge store. While RAG systems can get very complex, we’ll focus on starting simple and understanding and implementing the core components of such pipelines. Our plan is to build up in complexity in three steps:
 
-### Tier 1: Minimal Naive RAG Implementation 
+### Step 1: Minimal Naive RAG Implementation 
 
 Start with the absolute basics, implementing RAG from scratch:
 - Load 1–2 PDFs using `pypdf`
@@ -18,8 +18,8 @@ Here we will emphasize:
 - The core concept of RAG: retrieving information from an external data store and injecting it into the model’s prompt to generate better answers. This works, but has limitations.
 - The limitations of naïve RAG include the retrieval step’s inability to handle synonyms, lack of scalability with larger datasets, and absence of filtering or ranking by relevance.
 
-### Tier 2: Basic Semantic RAG
-Address Tier 1 limitations by introducing:
+### Step 2: Basic Semantic RAG
+Address the limitations of the minimal RAG implementation by introducing:
 - Document chunking (e.g., with `RecursiveCharacterTextSplitter`)
 - Embedding chunks using OpenAI or Hugging Face models
 - Storing and querying chunks in a vector store (e.g., FAISS)
@@ -27,7 +27,7 @@ Address Tier 1 limitations by introducing:
 
 We’ll use resources such as [Nir Diamant’s minimal RAG example](https://github.com/NirDiamant/RAG_Techniques) to demonstrate this workflow.
 
-### Tier 3: Scalable RAG with pgvector
+### Step 3: Scalable RAG with pgvector
 Build a full pipeline using Langchain that includes:
 - Postgres vector storage (either local Postgres or Supabase)
 - Metadata storage and retrieval
