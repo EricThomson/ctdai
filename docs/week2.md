@@ -4,23 +4,21 @@ Retrieval-Augmented Generation (RAG) systems are large language models (LLMs) th
 For example, if you ask a standard LLM, “Who won the World Cup?” it might reply based on 2021 or earlier knowledge. A RAG system, by contrast, can search a structured data source and provide current information. This makes RAG useful for question-answering systems, technical assistants, customer support tools, and more.
 
 ## Focus
-This week, we will focus on building a minimal working RAG pipeline that connects an LLM with a document-based knowledge store. While RAG systems can get very complex, we’ll focus on starting simple and understanding and implementing the core components of such pipelines.
+This week, we will focus on building a minimal working RAG pipeline that connects an LLM with a document-based knowledge store. While RAG systems can get very complex, we’ll focus on starting simple and understanding and implementing the core components of such pipelines. Our plan is to build things up in *three tiers*:
 
-We’ll do this in **three tiers**:
+### Tier 1: Minimal Naive RAG Implementation 
 
-### Tier 1: Minimal RAG Implementation from Scratch
-
-Start with the absolute basics:
+Start with the absolute basics, implementing RAG from scratch:
 - Load 1–2 PDFs using `pypdf`
 - Extract full text
 - Perform basic keyword matching (e.g., `if query in doc`)
 - Pass matched content into the LLM via a simple prompt
 
-This tier emphasizes:
-- Core concept of RAG: retrieval-aided query generation
-- The limitations of naïve retrieval: inability to handle synonyms, large datasets, and more. 
+Here we will emphasize:
+- The core concept of RAG: retrieving information from an external data store and injecting it into the model’s prompt to generate better answers. This works, but has limitations.
+- The limitations of naïve RAG include the retrieval step’s inability to handle synonyms, lack of scalability with larger datasets, and absence of filtering or ranking by relevance.
 
-### Tier 2: Semantic RAG
+### Tier 2: Basic Semantic RAG
 Address Tier 1 limitations by introducing:
 - Document chunking (e.g., with `RecursiveCharacterTextSplitter`)
 - Embedding chunks using OpenAI or Hugging Face models
@@ -30,7 +28,7 @@ Address Tier 1 limitations by introducing:
 We’ll use resources such as [Nir Diamant’s minimal RAG example](https://github.com/NirDiamant/RAG_Techniques) to demonstrate this workflow.
 
 ### Tier 3: Scalable RAG with pgvector
-Build a full pipeline using Langchain that supports:
+Build a full pipeline using Langchain that includes:
 - Postgres vector storage (either local Postgres or Supabase)
 - Metadata storage and retrieval
 - Multi-document libraries
@@ -62,7 +60,6 @@ By the end of this week, students will be able to:
 Note: the distinction between *retrieval* and *generation* is foundational. Retrieval locates relevant pieces of text; generation creates a coherent answer based on those pieces.
 
 ## Resources
-
 - [AWS: What is RAG?](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
 - [Nir Diamant RAG page](https://github.com/NirDiamant/RAG_Techniques)
 - [Timescale RAG Tutorial](https://www.timescale.com/blog/how-to-build-llm-applications-with-pgvector-vector-store-in-langchain)
