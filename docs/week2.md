@@ -26,7 +26,7 @@ Address the limitations of the minimal RAG implementation by introducing:
 - Document chunking (e.g., with `RecursiveCharacterTextSplitter`)
 - Embedding chunks using OpenAI or Hugging Face models
 - Storing and querying chunks in a vector store (e.g., FAISS)
-- Retrieving top-k relevant chunks using semantic similarity
+- Retrieving top-k relevant chunks using semantic similarity and vector indexes. 
 
 We’ll use resources such as [Nir Diamant’s minimal RAG example](https://github.com/NirDiamant/RAG_Techniques) to demonstrate this workflow.
 
@@ -41,8 +41,8 @@ Build a full pipeline using Langchain that includes:
 We will adapt and tweak the [excellent tutorial from Timescale](https://www.timescale.com/blog/how-to-build-llm-applications-with-pgvector-vector-store-in-langchain), which uses all open-source tools.
 
 ## Hands-On Activities
-- Run the minimal RAG example from scratch (no embeddings, no DB)
-- Discuss its limitations and transition to Nir Diamant's semantic RAG notebook
+- Build a simple RAG example from scratch (no embeddings, no DB)
+- Build a semantic RAG pipeline from scratch.
 - Set up a local or hosted Postgres database with `pgvector` support (Supabase recommended for ease of use)
 - Ingest and chunk a small document library (e.g., scientific papers, course materials, etc.)
 - Embed chunks using the OpenAI API or a Hugging Face model
@@ -53,16 +53,14 @@ We will adapt and tweak the [excellent tutorial from Timescale](https://www.time
 ## Learning Outcomes
 By the end of this week, students will be able to:
 
-- Explain what retrieval-augmented generation is and why it's useful (cost savings comopared to increasing context window).
-- Build a basic document ingestion and chunking pipeline
+- Explain what retrieval-augmented generation is and why it's useful (cost savings compared to increasing context window).
+- Explain the difference between retrieval and generation
+- Understand how to build a basic document ingestion and chunking pipeline
 - Compute vector embeddings of text using a transformer-based model
 - Store and query embeddings using Postgres (or Supabase) + pgvector
 - Retrieve relevant documents and use them to prompt an LLM
 - Distinguish grounded responses from hallucinations based on source reference
-- Explain the difference between retrieval (finding relevant chunks) and generation (answering questions based on them)
 - Swap in their own documents and fine-tune retrieval behavior
-
-Note: the distinction between *retrieval* and *generation* is foundational. Retrieval locates relevant pieces of text; generation creates a coherent answer based on those pieces.
 
 ## Resources
 - [AWS: What is RAG?](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
@@ -71,7 +69,8 @@ Note: the distinction between *retrieval* and *generation* is foundational. Retr
 - [Supabase Blog: OpenAI Embeddings + pgvector](https://supabase.com/blog/openai-embeddings-postgres-vector)
 - [LlamaIndex: Understanding RAG](https://docs.llamaindex.ai/en/stable/understanding/rag/)
 - [Building RAG with Ollama (YouTube)](https://www.youtube.com/watch?v=GWB9ApTPTv4)
-
+- [Vector indices](https://www.youtube.com/watch?v=N7TQgp18kA4)
+  
 ## Instructor Notes
 Provide a small, curated library of documents for demos and assignments. Consider:
 
