@@ -1,5 +1,5 @@
 # CTD AI Notebooks
-This repo contains multiple notebooks to introduce core skills in a modular way, that we hope to ultimately incorporate into the course. The modular design ensures flexibility, allowing us to adapt, add, or remix content as tools evolve. Some notebooks will incorporate many of these tools into larger-scale projects.
+This repo contains multiple notebooks to introduce core skills that we hope to ultimately incorporate into the course. The modular design ensures flexibility, allowing us to adapt, add, or remix content as tools evolve. Some notebooks will incorporate many of these tools into larger-scale projects.
 
 This is all a WIP and subject to change. 
 

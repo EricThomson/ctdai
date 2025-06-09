@@ -34,7 +34,7 @@ By the end of this week, students will be able to:
 - Use OpenAI’s API to send prompts and interpret responses
 - Apply basic prompt engineering principles to improve model output
 - Build a basic chatbot interface using an LLM
-- Understand what LangChain is and how it interfaces with LLMs
+- Understand what LangChain is and how it interfaces with LLMs (abstraction layer to interface with multiple LLMs)
 - Run and query a local LLM using Ollama
 
 ## Resources

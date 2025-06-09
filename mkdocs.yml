@@ -6,7 +6,7 @@ theme:
     - navigation.sections # Groups nav into sections
     - navigation.instant  # Instant loading between pages
 
-repo_url: https://github.com/EricThomson/ctdml
+repo_url: https://github.com/EricThomson/ctdai
 repo_name: GitHub
 edit_uri: ""
 
